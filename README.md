@@ -38,7 +38,7 @@ Testing:
 ```shell
 poetry run python scripts/test.py
 ```
-where `test.py` can be replaced with any of the scripts in the `script` directory.
+where `test.py` can be replaced with any of the scripts in the `scripts` directory.
 
 ## Example
 

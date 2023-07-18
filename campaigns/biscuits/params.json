@@ -1,6 +1,6 @@
 {
     "filename": "biscuits.csv",
-    "inputs": ["Pack price [£]", "Number of biscuits per pack"],
-    "outputs": ["Number of packs sold", "Profit [£]"],
+    "inputs": ["Pack price [GBP]", "Number of biscuits per pack"],
+    "outputs": ["Number of packs sold", "Profit [GBP]"],
     "train_test_split": 10
 }

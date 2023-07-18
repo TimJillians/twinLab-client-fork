@@ -7,6 +7,7 @@ import twinlab as tl
 # Parameters
 dataset_directory = "datasets"
 dataset_filename = "biscuits.csv"
+dataset_id = dataset_filename
 dataset_name = dataset_filename
 campaign_directory = os.path.join("campaigns", "biscuits")
 training_filepath = os.path.join(dataset_directory, dataset_filename)
@@ -17,7 +18,7 @@ verbose = True
 debug = False
 
 print()  #  Initial white space
-tl.upload_dataset(training_filepath,
+tl.upload_dataset(training_filepath, dataset_id, 
                   verbose=verbose, debug=debug)
 tl.query_dataset(dataset_name, verbose=verbose, debug=debug)
 tl.list_datasets(verbose=verbose, debug=debug)

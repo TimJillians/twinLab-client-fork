@@ -157,7 +157,13 @@ def print_response_message(r: requests.Response) -> None:
     """
     Print response message
     """
-    print("Response:", json.loads(r.text)["message"])
+    response_text = r.text
+    try:
+        response_dict = json.loads(response_text)
+        message = response_dict["message"]
+    except:
+        message = response_text
+    print("Response:", message)
     print()
 
 
